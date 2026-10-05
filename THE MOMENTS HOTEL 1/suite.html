@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suite | Hotel MOMents</title>
+  <meta name="description" content="Secure your sanctuary in the sky.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="top-navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li>
+        <button id="menuBtn" class="nav-btn interactive">Menu</button>
+      </li>
+      <li>
+        <a href="book.html" class="btn-primary interactive">Book Now</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Dining Menu Overlay -->
+  <div id="menuOverlay" class="menu-overlay">
+    <button id="closeMenuBtn" class="menu-close-btn">&times;</button>
+    <div class="menu-content-wrapper">
+      <h2 class="heading-display text-gold-gradient menu-title">Culinary Journey</h2>
+      <!-- Content here is handled mostly visually, omitted for brevity but should be the same as index -->
+    </div>
+  </div>
+
+  <main class="suite-detail-main">
+    <div class="container">
+      <div class="suite-detail-header fade-in">
+        <h1 id="suiteName" class="heading-display text-gold-gradient"></h1>
+        <p id="suiteDescription" class="text-body suite-detail-desc"></p>
+      </div>
+
+      <!-- High-Resolution Gallery -->
+      <div id="suiteGalleryGrid" class="suite-gallery-grid slide-up">
+        <!-- Dynamically injected images -->
+      </div>
+
+      <div class="suite-content-grid slide-up" style="animation-delay: 0.2s">
+        <!-- Tech Specs & Kettle Section -->
+        <div class="suite-info-section">
+          <section class="glass-panel">
+            <h3 class="heading-section">Technical Specifications</h3>
+            <div class="specs-grid">
+              <div class="spec-item">
+                <h4>Size</h4>
+                <p id="specSize"></p>
+              </div>
+              <div class="spec-item">
+                <h4>Occupancy</h4>
+                <p id="specOccupancy"></p>
+              </div>
+              <div class="spec-item">
+                <h4>View</h4>
+                <p id="specView"></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="glass-panel">
+            <h3 class="heading-section">Kettle & Comfort</h3>
+            <ul class="comfort-list">
+              <li>
+                <span class="comfort-icon">☕</span>
+                <div class="comfort-text">
+                  <strong>High-End Kettle Support</strong>
+                  <p>Curated selection of rare organic teas and single-origin coffee, refreshed twice daily.</p>
+                </div>
+              </li>
+              <li>
+                <span class="comfort-icon">🛎️</span>
+                <div class="comfort-text">
+                  <strong>24/7 AI & Human Concierge</strong>
+                  <p>Instant access to personalized room service, spa bookings, and local recommendations.</p>
+                </div>
+              </li>
+              <li>
+                <span class="comfort-icon">🎛️</span>
+                <div class="comfort-text">
+                  <strong>Smart-Room Controls</strong>
+                  <p>Voice and tablet-controlled lighting, climate, and smart-glass transparency.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- Pricing & Booking -->
+        <div class="suite-booking-section">
+          <div class="glass-panel booking-sticky">
+            <h3>Reserve Your Stay</h3>
+            <div id="suitePrice" class="booking-price"></div>
+            <p class="booking-includes">Includes complimentary breakfast, airport transfer, and exclusive lounge access.</p>
+            <a href="book.html" class="btn-primary booking-btn interactive">
+              Confirm Reservation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="global-footer">
+    <div class="container footer-grid">
+      <div class="footer-section">
+        <h3 class="footer-logo text-gold-gradient">Hotel MOMents</h3>
+        <p class="footer-text">
+          Experience the pinnacle of Quiet Luxury and Futuristic Elegance.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-heading">Contact & Location</h4>
+        <address class="footer-address">
+          <p>1 Zenith Peak, The Sovereign District</p>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

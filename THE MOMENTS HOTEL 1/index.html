@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel MOMents | Ultra-Luxury Hospitality</title>
+  <meta name="description"
+    content="A Next-Gen Ultra-Luxury Hospitality Interface embodying Futuristic Elegance and Quiet Luxury.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="top-navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li>
+        <button id="menuBtn" class="nav-btn interactive">Menu</button>
+      </li>
+      <li>
+        <a href="book.html" class="btn-primary interactive">Book Now</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Dining Menu Overlay -->
+  <div id="menuOverlay" class="menu-overlay">
+    <button id="closeMenuBtn" class="menu-close-btn">&times;</button>
+    <div class="menu-content-wrapper">
+      <h2 class="heading-display text-gold-gradient menu-title">Culinary Journey</h2>
+      <div class="menu-grid">
+        <!-- Morning -->
+        <div class="menu-category group">
+          <div class="menu-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Morning" class="menu-image" />
+            <div class="menu-image-overlay"></div>
+            <h3 class="menu-cat-title">Morning</h3>
+            <p class="menu-cat-subtitle">Breakfast & Awakening</p>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Truffle Scrambled Eggs</span>
+                <span class="menu-item-price">$45</span>
+              </div>
+              <p class="menu-item-desc">Fresh black truffle, organic eggs, sourdough.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Golden Croissant <span class="chef-special">Chef's Special</span></span>
+                <span class="menu-item-price">$25</span>
+              </div>
+              <p class="menu-item-desc">Edible 24k gold flakes, French butter, seasonal preserves.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Afternoon -->
+        <div class="menu-category group">
+          <div class="menu-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Afternoon" class="menu-image" />
+            <div class="menu-image-overlay"></div>
+            <h3 class="menu-cat-title">Afternoon</h3>
+            <p class="menu-cat-subtitle">Lunch & Replenishment</p>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Wagyu Beef Carpaccio</span>
+                <span class="menu-item-price">$85</span>
+              </div>
+              <p class="menu-item-desc">Miyazaki A5 Wagyu, capers, shaved parmesan.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Lobster Risotto <span class="chef-special">Chef's Special</span></span>
+                <span class="menu-item-price">$110</span>
+              </div>
+              <p class="menu-item-desc">Saffron infused carnaroli rice, butter-poached Maine lobster.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Evening -->
+        <div class="menu-category group">
+          <div class="menu-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Evening" class="menu-image" />
+            <div class="menu-image-overlay"></div>
+            <h3 class="menu-cat-title">Evening</h3>
+            <p class="menu-cat-subtitle">High Tea & Elegance</p>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">The Sovereign Tier</span>
+                <span class="menu-item-price">$150</span>
+              </div>
+              <p class="menu-item-desc">A selection of grand cru chocolates, caviar blinis, and rare teas.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Matcha Opera Cake <span class="chef-special">Chef's Special</span></span>
+                <span class="menu-item-price">$35</span>
+              </div>
+              <p class="menu-item-desc">Ceremonial grade matcha, gold leaf.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Night -->
+        <div class="menu-category group">
+          <div class="menu-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Night" class="menu-image" />
+            <div class="menu-image-overlay"></div>
+            <h3 class="menu-cat-title">Night</h3>
+            <p class="menu-cat-subtitle">Dinner & Indulgence</p>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Dry-Aged Tomahawk <span class="chef-special">Chef's Special</span></span>
+                <span class="menu-item-price">$220</span>
+              </div>
+              <p class="menu-item-desc">45-day aged, roasted garlic, signature obsidian salt.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Pan-Seared Scallops</span>
+                <span class="menu-item-price">$90</span>
+              </div>
+              <p class="menu-item-desc">Hokkaido scallops, cauliflower purée, caviar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-container">
+    <!-- Hero Section -->
+    <section id="heroSection" class="hero-section">
+      <div id="heroBg" class="hero-background">
+        <img src="public/bg-image.jpeg" alt="Golden Ink in Water" class="hero-image" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-subtitle">Welcome to</p>
+        <h1 id="heroTitle" class="heading-display hero-title">
+          <span class="text-gold-gradient">Hotel MOMents</span>
+        </h1>
+        <p class="text-body hero-description">
+          A Next-Gen Ultra-Luxury Hospitality Interface. Where Futuristic Elegance meets Quiet Luxury in orbital
+          perfection.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary interactive">Enter the Concierge</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Suites Gallery -->
+    <section id="galleryWrapper" class="gallery-wrapper">
+      <div class="gallery-header">
+        <h2 class="heading-section text-gold-gradient">The Signature Suites Gallery</h2>
+      </div>
+      <div id="galleryContainer" class="gallery-container">
+        <!-- Vanguard -->
+        <div class="suite-panel">
+          <div class="suite-card">
+            <img
+              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+              alt="The Elite Vanguard" class="suite-image" />
+            <div class="suite-overlay">
+              <div class="glass-panel suite-info">
+                <h3>The Elite Vanguard</h3>
+                <p>Skyline views, smart-glass transparency controls, and automated climate scheduling. Filter your
+                  experience by mood: Dark & Moody, Bright & Minimalist, or Golden Hour.</p>
+                <div class="suite-amenities">
+                  <span class="amenity-tag">Private Helipad</span>
+                  <span class="amenity-tag">AI Concierge</span>
+                  <span class="amenity-tag">Infinity Pool</span>
+                </div>
+                <div class="suite-footer">
+                  <span class="suite-price">$5,000 / Night</span>
+                  <a href="suite.html?id=vanguard" class="btn-primary interactive">Reserve Suite</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Heritage -->
+        <div class="suite-panel">
+          <div class="suite-card">
+            <img
+              src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+              alt="The Heritage Prime" class="suite-image" />
+            <div class="suite-overlay">
+              <div class="glass-panel suite-info">
+                <h3>The Heritage Prime</h3>
+                <p>Classic luxury, premium textures, and curated art pieces for the modern aristocrat. Experience
+                  unparalleled luxury with our immersive 360° VR tour.</p>
+                <div class="suite-amenities">
+                  <span class="amenity-tag">Vintage Wine Cellar</span>
+                  <span class="amenity-tag">Grand Piano</span>
+                  <span class="amenity-tag">Butler Service</span>
+                </div>
+                <div class="suite-footer">
+                  <span class="suite-price">$4,200 / Night</span>
+                  <a href="suite.html?id=heritage" class="btn-primary interactive">Reserve Suite</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Future -->
+        <div class="suite-panel">
+          <div class="suite-card">
+            <img
+              src="https://images.unsplash.com/photo-1590490359683-658d3d23f972?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+              alt="The Orbital Oasis" class="suite-image" />
+            <div class="suite-overlay">
+              <div class="glass-panel suite-info">
+                <h3>The Orbital Oasis</h3>
+                <p>Futuristic minimalist luxury hotel suite, smart glass, glowing accents, cinematic lighting. A
+                  Floating, glowing gold orb AI awaits your every command.</p>
+                <div class="suite-amenities">
+                  <span class="amenity-tag">Zero-G Simulator</span>
+                  <span class="amenity-tag">Holographic Displays</span>
+                  <span class="amenity-tag">Molecular Gastronomy</span>
+                </div>
+                <div class="suite-footer">
+                  <span class="suite-price">$8,500 / Night</span>
+                  <a href="suite.html?id=future" class="btn-primary interactive">Reserve Suite</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="teaser-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="heading-section text-gold-gradient">The MOMents Legacy</h2>
+        </div>
+        <div class="cards-grid slide-up">
+          <div class="card glass-panel">
+            <h3 class="card-title">Our Vision</h3>
+            <p class="card-text text-body">To redefine ultra-luxury hospitality through an uncompromising blend of
+              futuristic elegance and quiet luxury. Every detail is curated to provide a seamless, orbital experience.
+            </p>
+          </div>
+          <div class="card glass-panel">
+            <h3 class="card-title">The Architecture</h3>
+            <p class="card-text text-body">Crafted by award-winning visionaries, Hotel MOMents is a masterpiece of
+              smart-glass engineering and sustainable opulence, soaring above the Neo-Metropolis skyline.</p>
+          </div>
+          <div class="card glass-panel">
+            <h3 class="card-title">Unmatched Service</h3>
+            <p class="card-text text-body">From your personal AI to our discrete human concierges, we anticipate your
+              desires before they are spoken, ensuring a truly tailored sanctuary in the sky.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="global-footer">
+    <div class="container footer-grid">
+      <div class="footer-section">
+        <h3 class="footer-logo text-gold-gradient">Hotel MOMents</h3>
+        <p class="footer-text">
+          Experience the pinnacle of Quiet Luxury and Futuristic Elegance. Where every moment is tailored to perfection.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-icon">IG</a>
+          <a href="#" class="social-icon">TW</a>
+          <a href="#" class="social-icon">FB</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-heading">Contact & Location</h4>
+        <address class="footer-address">
+          <p>1 Zenith Peak, The Sovereign District</p>
+          <p>Neo-Metropolis, NX 10024</p>
+        </address>
+        <div class="footer-contact">
+          <p><strong>Mobile/WhatsApp:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+          <p><strong>Concierge:</strong> concierge@hotelmoments.com</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-heading">Locate Us</h4>
+        <div class="map-container glass-panel">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.14448744574937!3d40.69763123332029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1692135687000!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hotel MOMents. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chatbot -->
+  <a href="https://wa.me/1234567890?text=Hello!%20I'm%20interested%20in%20booking%20a%20stay%20at%20Hotel%20MOMents."
+    target="_blank" rel="noopener noreferrer" class="whatsapp-float interactive" title="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0B0B0B"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle">
+      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Portal | Hotel MOMents</title>
+  <meta name="description" content="Secure your sanctuary in the sky.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="top-navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li>
+        <button id="menuBtn" class="nav-btn interactive">Menu</button>
+      </li>
+      <li>
+        <a href="book.html" class="btn-primary interactive">Book Now</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Dining Menu Overlay -->
+  <div id="menuOverlay" class="menu-overlay">
+    <button id="closeMenuBtn" class="menu-close-btn">&times;</button>
+    <!-- Content from script or shared via server logic in reality, manually duplicate for pure HTML -->
+    <div class="menu-content-wrapper">
+      <h2 class="heading-display text-gold-gradient menu-title">Culinary Journey</h2>
+      <!-- ... same content ... -->
+    </div>
+  </div>
+
+  <main class="booking-main">
+    <div class="container">
+      <div class="booking-header fade-in">
+        <h1 class="heading-display text-gold-gradient">Reservation Portal</h1>
+        <p class="text-body">Secure your sanctuary in the sky.</p>
+      </div>
+
+      <div class="booking-form-wrapper glass-panel slide-up">
+        <form id="bookingForm" class="booking-form">
+          <div class="form-section">
+            <h3 class="heading-section form-section-title">Stay Details</h3>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="arrival">Arrival Date</label>
+                <input type="date" id="arrival" name="arrival" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label for="departure">Departure Date</label>
+                <input type="date" id="departure" name="departure" class="form-input" required />
+              </div>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="room">Room Type</label>
+                <select id="room" name="room" class="form-input select-input" required>
+                  <option value="" disabled selected>Select a Suite</option>
+                  <option value="vanguard">The Elite Vanguard ($5,000/night)</option>
+                  <option value="heritage">The Heritage Prime ($4,200/night)</option>
+                  <option value="future">The Orbital Oasis ($8,500/night)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" class="form-input select-input" required>
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3 class="heading-section form-section-title">Guest Information</h3>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Lord / Lady..." required />
+            </div>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (234) 567-8900" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="requests">Special Requests / Dietary Requirements</label>
+              <textarea id="requests" name="requests" class="form-input textarea-input" rows="4" placeholder="e.g. Feather-free pillows, Champagne on arrival..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary booking-submit-btn interactive">
+            Request Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="global-footer">
+    <div class="container footer-grid">
+      <div class="footer-section">
+        <h3 class="footer-logo text-gold-gradient">Hotel MOMents</h3>
+        <p class="footer-text">
+          Experience the pinnacle of Quiet Luxury and Futuristic Elegance. Where every moment is tailored to perfection.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-icon">IG</a>
+          <a href="#" class="social-icon">TW</a>
+          <a href="#" class="social-icon">FB</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-heading">Contact & Location</h4>
+        <address class="footer-address">
+          <p>1 Zenith Peak, The Sovereign District</p>
+          <p>Neo-Metropolis, NX 10024</p>
+        </address>
+        <div class="footer-contact">
+          <p><strong>Mobile/WhatsApp:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+          <p><strong>Concierge:</strong> concierge@hotelmoments.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hotel MOMents. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
